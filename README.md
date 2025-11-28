@@ -1,50 +1,139 @@
-# Welcome to your Expo app 👋
+# MoodMap – A Mood Tracking App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+MoodMap is an ongoing React Native app (built with Expo) that helps users track and reflect on their emotional wellbeing over time.
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Overview
 
-   ```bash
-   npm install
-   ```
+MoodMap lets you quickly log how you feel each day and review your past entries in a simple, clean interface. The goal is to build a lightweight companion you can open in a few seconds, record your mood, and move on with your day – while still getting long‑term insights later.
 
-2. Start the app
+> ⚠️ **Status:** Work in progress. Features, UI, and structure are still evolving.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🧩 Features (Current & Planned)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Home Screen**
+  - Acts as the main landing page
+  - Quick access to mood logging and history
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Add Mood**
+  - Record how you’re feeling
+  - Choose from mood options (e.g., happy, sad, stressed, calm, etc.)
+  - Optionally add notes (planned)
 
-## Get a fresh project
+- **History**
+  - View past mood entries
+  - Daily list of moods with timestamps
+  - Basic trends & summaries (planned)
 
-When you're ready, run:
+- **Settings**
+  - Basic app configuration
+  - Theme / appearance (planned)
+  - Reminder notifications (planned)
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework:** React Native
+- **Runtime / Tooling:** Expo
+- **Navigation:** Expo Router (tab-based navigation)
+- **Language:** TypeScript
+
+The app uses a **bottom tab navigator** so users can easily switch between:
+
+- Home
+- Add Mood
+- History
+- Settings
+
+---
+
+## 🗂 Project Structure (High-Level)
+
+> This may change as the app evolves.
 
 ```bash
-npm run reset-project
+MoodMap/
+├─ app/
+│  ├─ (tabs)/
+│  │  ├─ index.tsx          # Home screen
+│  │  ├─ add-mood.tsx       # Add Mood screen
+│  │  ├─ history.tsx        # Mood History screen
+│  │  └─ settings.tsx       # Settings screen
+│  └─ _layout.tsx           # Expo Router tab layout
+├─ components/              # Reusable UI components
+├─ hooks/                   # Custom hooks (if any)
+├─ assets/                  # Images, icons, etc.
+├─ package.json
+├─ app.json / app.config.js
+└─ tsconfig.json
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## Getting Started
 
-To learn more about developing your project with Expo, look at the following resources:
+### 1. Prerequisites
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Node.js (LTS recommended)
+- npm or yarn
+- Expo CLI (optional, but useful)
+- Expo Go app on your Android/iOS device **or** an emulator/simulator
 
-## Join the community
+### 2. Clone the Repository
 
-Join our community of developers creating universal apps.
+```bash
+git clone https://github.com/hija-happy/ReactNative-DailyMoodTracker.git
+cd ReactNative-DailyMoodTracker
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 3. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 4. Run the App
+
+```bash
+npx expo start
+```
+
+Then:
+
+- Scan the QR code with the **Expo Go** app on your phone, or
+- Press `a` to open on Android emulator, or `i` to open on iOS simulator (macOS only).
+
+---
+
+## 🤝 Contributing
+
+This is an ongoing learning/project repo.
+
+- Found a bug? **Open an issue.**
+- Have an idea or improvement? **Create a feature request.**
+- Want to contribute code? **Submit a pull request** with a clear description of your changes.
+
+---
+
+## 📸 Screenshots
+
+> To be added once the UI stabilizes.
+
+---
+
+## 🧠 Why MoodMap?
+
+Tracking your mood over time can:
+
+- Help you notice emotional patterns
+- Make it easier to talk about your mental health
+- Give you context for your good and bad days
+
+MoodMap aims to make this process simple, quick, and available in your pocket every day.
+
